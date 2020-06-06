@@ -79,6 +79,10 @@
   // *6, *8, *D, and *E:    2 x 16 bits/word     LPM Support
   // When CAN clock is enabled, USB can use first 768 bytes ONLY.
 
+#elif defined(STM32L433xx)
+  #include "stm32l4xx.h"
+  #define PMA_LENGTH (1024u)
+
 #elif CFG_TUSB_MCU == OPT_MCU_STM32L0
   #include "stm32l0xx.h"
   #define PMA_LENGTH (1024u)
