@@ -42,7 +42,7 @@ enum  {
   BLINK_UNPRESSED = 1000
 };
 
-#define HELLO_STR   "Hello from TinyUSB\r\n"
+#define HELLO_STR   "Hello from TestRIG\r\n"
 
 int main(void)
 {
